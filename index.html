@@ -2,9 +2,22 @@
 
 <html>
   <head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166035462-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-166035462-1');
+    </script>
+
+    <title>browserGAN</title> 
+
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22> <text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
     <meta charset="utf-8">
+
 
     <meta name="description" content="A GAN inside a browser that can explore its latent space">
     <meta name="keywords" content="Browser GAN MNIST generate interpolate deep machine">
@@ -21,7 +34,7 @@
       ></canvas>
 
       <div class="button" id="refresh-button">GENERATE</div>
-      <div class="button" id="lerp-button">INTERPOLATE</div>
+      <div class="button" id="lerp-button">EXPLORE</div>
 
     </div>
  
