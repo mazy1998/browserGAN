@@ -1,0 +1,32 @@
+
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22> <text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <meta charset="utf-8">
+
+    <meta name="description" content="GAN that can generate and interpolate inside a browser">
+    <meta name="keywords" content="Browser GAN MNIST generate interpolate deep machine">
+    <meta name="author" content="Mazeyar Moeini Feizabadi">
+  </head>
+
+  <body>
+    <div class="card elevation">
+      <canvas
+        class="canvas elevation"
+        id="canvas"
+        width="280"
+        height="280"
+      ></canvas>
+
+      <div class="button" id="refresh-button">GENERATE</div>
+      <div class="button" id="lerp-button">INTERPOLATE</div>
+
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
