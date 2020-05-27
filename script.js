@@ -42,8 +42,10 @@ async function updateCanvas(leArray) {
 }
 
 async function refreshCanvas() {
-    leArray = new Float32Array(Array.from({length: 100}, () => (Math.random()*2) -1 ));
-    updateCanvas(leArray)
+    if (!lerpRunning){
+        leArray = new Float32Array(Array.from({length: 100}, () => (Math.random()*2) -1 ));
+        updateCanvas(leArray)
+    }  
 }
 
 async function walkCanvas(){
